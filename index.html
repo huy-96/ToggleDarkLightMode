@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Dark Light Mode</title>
+    <link rel="stylesheet" href="/ToggleDarkLightMode/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+<body>
+    <section class="container">
+        <div class="wrapper-toggle">
+            <a href="#" class="btn-toggle" onclick="toggleMode()">
+                <i class="far fa-moon"></i>
+            </a>
+        </div>
+        <div class="wrapper-avarta">
+            <div class="avarta">
+                <a href="#">
+                    <img src="/ToggleDarkLightMode/Images/90516170_2630366683954228_168809690954727424_n.jpg" alt="Ảnh đại diện">
+                </a>
+            </div>
+            <div class="title">
+                <a href="#">
+                    Bùi Công Huy
+                </a>
+            </div>
+            <div class="job">
+                Front End Developer
+            </div>
+        </div>
+        <ul class="wrapper-socials">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/?lang=vi" target="_blank"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>  
+<script>
+    function toggleMode(){
+        Array.from(document.getElementsByTagName('body'))[0].classList.toggle('dark-body');
+    }
+</script>
